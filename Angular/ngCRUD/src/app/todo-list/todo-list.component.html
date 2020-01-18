@@ -1,0 +1,43 @@
+<!--Display existing 'Todos'-->
+  <!--IF there is a todo then-->
+  <section class="main" *ngIf="todos.length > 0">
+    <ul class="todo-list">
+      <!--
+      LOOP over all todo's, assign each to 'todo' variable.
+      Also apply CSS class 'completed' to li element
+      -->
+      <li *ngFor="let todo of todos" [class.completed]="todo.complete">
+        <!--
+          Desc: Display todo details for each individual todo
+          - (click)="toggleTodoComplete(todo)" execute when
+            checkbox is clicked
+          - [checked]="todo.complete" assign the value of 
+            todo.complete to property checked of element
+          - (click)="removeTodo(todo)" executed when destroy 
+            button is clicked
+        -->
+        <!--
+        Changed to <app-todo-list-item component below....
+        <div class="view">
+          <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+          <label>{{todo.title}}</label>
+          <button class="destroy" (click)="removeTodo(todo)"></button>
+        </div>
+    	-->
+
+    	<!--
+    		Pass in the todo item through the todo property using the [todo]
+    		input property syntax and attach event handlers to events we would
+    		expect the TodoListItemComponent to emit, such as toggleComplete
+    		event and the remove event.
+        The use of $event as the argument name to access payload (emmitted value)
+    	-->
+    	<app-todo-list-item
+        [todo]="todo"
+        (toggleComplete)="onToggleTodoComplete($event)"
+        (remove)="onRemoveTodo($event)">
+      </app-todo-list-item>
+
+      </li>
+    </ul>
+  </section>

@@ -1,0 +1,48 @@
+install node (^^)
+node -v
+npm -v
+cd /path/to/directory
+npm install mocha -g
+npm install chai
+
+npm init //Follow through procedure
+
+mkdir app
+mkdir test
+
+//save for automatically saving dependencies to package.json
+npm install mocha --save	
+npm install mocha --save
+
+//invoke mocha binary locally
+./node_modules/.bin/mocha --reporter spec
+
+//update package.json
+{
+  "name": "converter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+//To run server and test (2 Shells)
+cd /Desktop/converter
+node .\app\server.js
+npm test
+
+
+
+--MySQL on WAMP--
+create database TEST_SHUTTLE_DB;
+use TEST_SHUTTLE_DB;
+
+create table coordinates (
+    shuttle_id SMALLINT(3) UNSIGNED NOT NULL, 	//0-999
+    latitude DECIMAL(9,6),						//###.######
+    longitude DECIMAL(9,6),						//###.######
+    Primary Key(shuttle_id));

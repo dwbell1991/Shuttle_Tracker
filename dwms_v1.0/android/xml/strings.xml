@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ShuttleGPSApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="toMaps">Green Route</string>
+    <string name="blueRoute">Blue Route</string>
+    <string name="goldRoute">Gold Route</string>
+    <string name="title_text">\"Where\'s My Shuttle?\"</string>
+    <string name="google_app_id">canvas-rampart-120212</string>
+</resources>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        label{
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 100px;
+                text-align: left;
+        }
+        input {
+                display: inline-block;
+                float: left;
+        }
+</style>
+<body>
+        <h3>Insert an Updated Marker</h3>
+                <form action="updateStudentMarker.php" method="post">
+                        <div>
+                        <label>Old Marker ID:</label><input type="text" name="old_ID"/><br></br>
+                        <label>New Marker ID:</label><input type="text" name="new_ID"/><br></br>
+                        <label>Latitude</label><input type="text" name="stud_lat"/><br></br>
+                        <label>Longitude</label><input type="text" name="stud_lon"/><br></br>
+			</div>
+                        <input type="submit">
+                </form>
+</body>
+</html>

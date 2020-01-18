@@ -1,0 +1,14 @@
+<!-- Taken out of app/app.component.html -->
+<section class="todoapp">
+	
+  <!--todo-list-header component, adds a 'todo'-->
+  <app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
+
+  <!-- generates the list of 'todo' objects -->
+  <app-todo-list [todos]="todos" (toggleComplete)="onToggleTodoComplete($event)"
+                 (remove)="onRemoveTodo($event)"></app-todo-list>
+
+  <!-- generates the footer -->
+  <app-todo-list-footer [todos]="todos"></app-todo-list-footer>
+
+</section>

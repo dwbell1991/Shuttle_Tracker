@@ -1,0 +1,14 @@
+ <!--
+	Desc: Display todo details for each individual todo
+	- (click)="toggleTodoComplete(todo)" execute when
+	  checkbox is clicked
+	- [checked]="todo.complete" assign the value of 
+	  todo.complete to property checked of element
+	- (click)="removeTodo(todo)" executed when destroy 
+	  button is clicked
+-->
+<div class="view">
+  <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+  <label>{{todo.title}}</label>
+  <button class="destroy" (click)="removeTodo(todo)"></button>
+</div>

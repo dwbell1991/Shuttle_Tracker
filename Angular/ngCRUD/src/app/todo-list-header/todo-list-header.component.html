@@ -1,0 +1,13 @@
+<!--
+      Desc: Create new 'Todo' on keypress ENTER
+      - [(ngModel)]="___" add a two way binding between input
+        value and newTodo.title
+      - (keyup.enter)="___" execute addTodo() when the enter
+        key was pressed while typing in the input element.
+      - Decouples the header from the data service (Dumb Component)
+    -->
+<header class="header">
+    <h1>Todos</h1>
+
+    <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+  </header>

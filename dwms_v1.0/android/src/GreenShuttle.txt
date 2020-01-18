@@ -1,0 +1,12 @@
+package com.dwbell.goldengeese.shuttlegpsapplication.shuttle;
+
+public class GreenShuttle extends Shuttle {
+
+    private final int hexGreen = 130;
+
+    public GreenShuttle(String id, int utcTime, double lat, double lng, int conn, int satNum){
+        super(id, utcTime, lat, lng, conn, satNum);
+        this.hexMarkerColor = hexGreen;
+        this.routeName = "Green";
+    }
+}

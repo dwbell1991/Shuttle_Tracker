@@ -1,0 +1,14 @@
+<!--
+This is the root component template of the application. It 
+contains a router-outlet for displaying contents of each view based
+on the current route, and an alert for displaying alert message from 
+anywhere in the system. 
+-->
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

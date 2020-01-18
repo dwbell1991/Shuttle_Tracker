@@ -1,0 +1,100 @@
+---------- Complete guide to setting up the DWMS front end ----------
+
+Credit to both of the following websites for providing great examples as well as a great starting point for this application. I would highly recommend reading through both articles to familiarize yourself with basic Angular concepts.
+Angular CRUD Setup: https://www.sitepoint.com/angular-2-tutorial/
+User Authentication: http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial#app-component-html
+
+Install Node.js: Asynchronous open source server framework. Comes with the Node Package Mangager (NPM) which allows us to install desired tools. 
+Documentation: https://nodejs.org/docs/latest-v7.x/api/
+Download: https://nodejs.org/en/download/
+Versioning Check:
+	node -v
+	npm -v
+
+Install Angular CLI: A command line interface for Angular
+Documentation: https://github.com/angular/angular-cli/wiki
+			   https://www.sitepoint.com/ultimate-angular-cli-reference/
+To install for global usage
+	npm install -g angular-cli
+Versioning Check:
+	ng version
+
+Generate the new application using Angular CLI.
+This command generates all needed files to get started. Change directory to whichever folder your looking to use as your desired root.
+	cd path/to/your/desired/directory/root
+	ng new dwms-app
+
+Change directories to the newly created root directory. This the actual
+angular application root.
+	cd ./dwms-app
+
+Now we can start up our development server, which will be hosted on http://localhost:4200/
+	ng serve
+
+
+--- Useful Angular CLI commands ---
+Using 'ng generate', will automatically add the values app.module.ts. Services registered in app.module are available to all components in the entire application.
+	ng generate <type> <name> <--spec>
+	-where type is of, component, service, class...
+	-where name is whatever you want
+	-where --spec specifies if you'd like a test file as well
+
+Run the unit tests via cmd line, it will pull up and run in a browser.
+	ng test
+
+
+--- Leaflet ---
+Guide: https://www.npmjs.com/package/@asymmetrik/angular2-leaflet
+
+Install Leaflet
+	npm install leaflet
+	npm install @asymetrik/angular2-leaflet
+
+Install the typescript library for Leaflet
+	npm install @types/leaflet
+
+Add styles to .angular-cli.json and reload the server
+
+Import code dependencies and module through app.module.ts imports: []
+
+Create leaflet.component.ts, leaflet.component.html, leaflet.model.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
