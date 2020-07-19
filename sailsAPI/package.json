@@ -15,7 +15,7 @@
     "coffeescript": "^2.2.4",
     "grunt": "1.0.1",
     "jsonwebtoken": "^8.2.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "sails": "^1.0.0",
     "sails-hook-grunt": "^3.0.2",
     "sails-hook-orm": "^2.0.0",
