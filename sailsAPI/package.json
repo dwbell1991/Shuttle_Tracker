@@ -21,7 +21,7 @@
     "sails-hook-orm": "^2.0.0",
     "sails-hook-sockets": "^1.5.2",
     "sails-hook-validation": "^0.4.7",
-    "sails-mysql": "^1.0.0",
+    "sails-mysql": "^3.0.0",
     "sprint-js": "^0.1.0",
     "waterline": "^0.13.3"
   },
